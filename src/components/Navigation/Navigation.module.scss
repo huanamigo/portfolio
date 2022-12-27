@@ -1,0 +1,16 @@
+.navbar {
+  background-color: black;
+  width: 10rem;
+  height: 100vh;
+  position: fixed;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

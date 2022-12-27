@@ -1,0 +1,11 @@
+@import '/src/variables.scss';
+
+.contact {
+  background-color: $main;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  padding: 20px;
+  transform: rotate(-90deg) translate(100%, 0);
+  transform-origin: bottom right;
+}

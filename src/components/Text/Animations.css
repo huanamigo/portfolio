@@ -1,0 +1,81 @@
+.blockAnimation {
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 1s;
+}
+
+.textAnimation {
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 2s;
+}
+
+.blockAnimation2 {
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 3s;
+}
+
+.textAnimation2 {
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 4s;
+}
+
+.blockAnimation3 {
+  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation-delay: 5s;
+}
+
+.textAnimation3 {
+  animation: mainFadeIn 2s forwards;
+  animation-delay: 6s;
+  font-size: 1.7vw !important;
+  color: gray;
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: -5rem;
+  }
+  50% {
+    width: calc(5rem + 100%);
+    left: -5rem;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rubberband {
+  0% {
+    transform: scaleX(1);
+  }
+  40% {
+    transform: scaleX(1.12) scaleY(0.75);
+  }
+  55% {
+    transform: scaleX(0.85) scaleY(1);
+  }
+  65% {
+    transform: scaleX(1.09) scaleY(0.85);
+    color: #ccff00;
+  }
+  75% {
+    transform: scaleX(0.9) scaleY(1);
+  }
+  90% {
+    transform: scaleX(1.05) scaleY(0.95);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+    color: white;
+  }
+}
