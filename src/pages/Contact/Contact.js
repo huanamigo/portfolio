@@ -1,14 +1,12 @@
 import React from 'react';
+import Form from '../../components/Form/Form';
 import styles from './Contact.module.scss';
 
 const Home = () => {
   return (
-    <div className={styles.contact}>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-        voluptate recusandae quia fugit dolore, excepturi eum quibusdam eligendi
-        cumque quidem.
-      </p>
+    <div className={styles.container}>
+      <h1 className={styles.header}>Contact me</h1>
+      <Form />
     </div>
   );
 };

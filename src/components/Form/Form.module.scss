@@ -1,0 +1,39 @@
+@import '../../variables.scss';
+
+.form {
+  width: 30%;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-areas:
+    'name email .'
+    'subject subject .'
+    'message message .';
+
+  .name {
+    grid-area: name;
+  }
+  .email {
+    grid-area: email;
+  }
+  .subject {
+    grid-area: subject;
+  }
+  .message {
+    grid-area: message;
+  }
+
+  > input {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 1vw;
+    padding: 10px;
+    border: none;
+
+    &:focus-visible {
+      color: $main !important;
+    }
+  }
+}

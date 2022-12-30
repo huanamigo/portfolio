@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import ContactBtn from '../ContactBtn/ContactBtn';
 import Logo from '../Logo/Logo';
 import styles from './Navigation.module.scss';
@@ -7,13 +7,34 @@ import styles from './Navigation.module.scss';
 const Navigation = () => {
   return (
     <div className={styles.navbar}>
-      <Link to="/" className={styles.logoLink}>
+      <NavLink to="/" className={styles.logoLink}>
         {<Logo />}
-      </Link>
+      </NavLink>
 
-      <Link to="/contact" className={styles.link}>
-        {<ContactBtn />}
-      </Link>
+      <NavLink to="/contact">{<ContactBtn />}</NavLink>
+
+      <div className={styles.container}>
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+          to="/skills"
+        >
+          skills
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+          to="/contact"
+        >
+          contact
+        </NavLink>
+
+        <NavLink
+          className={({ isActive }) => (isActive ? styles.active : styles.link)}
+          to="/work"
+        >
+          work
+        </NavLink>
+      </div>
     </div>
   );
 };
