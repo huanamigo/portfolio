@@ -1,0 +1,35 @@
+@import '/src/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.monitor {
+  width: 100%;
+  height: 95px;
+  background-color: $background;
+  top: 50%;
+  white-space: nowrap;
+  transform: rotate(-90deg) translate(50%, 0);
+  transform-origin: bottom right;
+  transition: all 200ms ease;
+
+  p {
+    font-size: 4rem;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    animation: move 20s infinite linear;
+    color: $main;
+  }
+}
+
+@keyframes move {
+  from {
+    left: 100%;
+  }
+  to {
+    left: -4200px;
+  }
+}

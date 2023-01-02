@@ -2,4 +2,7 @@
   min-height: 100vh;
   background-color: black;
   overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  max-height: 100vh;
 }

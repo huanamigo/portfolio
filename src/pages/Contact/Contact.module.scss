@@ -11,13 +11,46 @@
   max-width: calc(100vw - 10rem);
   color: whitesmoke;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  max-height: 100vh;
   padding-left: 5rem;
+
+  .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .headerWrapper {
+    padding-bottom: 20%;
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .info {
+    i {
+      color: $main;
+    }
+
+    a {
+      text-decoration: none;
+      color: whitesmoke;
+    }
+  }
 }
 
 .header {
   color: $main;
-  font-size: 5vw;
+  font-size: 4vw;
 }

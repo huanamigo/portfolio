@@ -1,0 +1,62 @@
+@import '/src/variables.scss';
+
+.container {
+  background-color: $background;
+  color: whitesmoke;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  * {
+    margin: 30px;
+  }
+
+  .button {
+    text-decoration: none;
+    color: black;
+    padding: 10px 25px;
+    background-color: $main;
+    border: none;
+    cursor: pointer;
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: $background;
+      color: $main;
+    }
+  }
+}
+
+.checkWrapper {
+  width: 10%;
+  padding: 0;
+  margin: 0;
+
+  svg {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.checkmark {
+  margin: 0;
+  padding: 0;
+  stroke: $main;
+  stroke-dashoffset: 745.74853515625;
+  stroke-dasharray: 745.74853515625;
+  animation: dash 2s ease-out forwards;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 745.74853515625;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

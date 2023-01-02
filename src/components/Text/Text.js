@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './Text.module.scss';
 import './Animations.css';
 
-const Text = (props) => {
+const Text = () => {
   return (
-    <>
+    <div>
       <div className={`${styles.title}`}>
         <span className={`${styles.block} blockAnimation`}></span>
         <h1 className={`${styles.letter} textAnimation`}>Hey,</h1>
@@ -23,7 +23,7 @@ const Text = (props) => {
           a Frontend Developer
         </h1>
       </div>
-    </>
+    </div>
   );
 };
 

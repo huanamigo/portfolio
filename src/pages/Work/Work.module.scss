@@ -1,0 +1,62 @@
+@import '/src/variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-left: 10rem;
+  max-width: calc(100vw - 10rem);
+  color: whitesmoke;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  filter: blur(10px);
+  transition: all 100ms ease;
+  z-index: 2;
+
+  a {
+    text-decoration: none;
+    opacity: 0;
+    p {
+      background-color: black;
+      color: $main;
+      padding: 10px 20px;
+    }
+  }
+
+  &:hover {
+    filter: blur(0);
+
+    a {
+      opacity: 1;
+    }
+  }
+
+  &:nth-child(1) {
+    background-image: url('./assets/rps.jpg');
+  }
+  &:nth-child(2) {
+    background-image: url('./assets/password.jpg');
+  }
+  &:nth-child(3) {
+    background-image: url('./assets/ewid.jpg');
+  }
+  &:nth-child(4) {
+    background-image: url('./assets/task.jpg');
+  }
+}

@@ -15,4 +15,20 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 5rem;
+  overflow: hidden;
+
+  em {
+    color: gray;
+  }
+
+  .desc {
+    padding-top: 2rem;
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
+
+.header {
+  color: $main;
+  font-size: 4vw;
 }

@@ -1,43 +1,54 @@
 import React from 'react';
-import FormInput from './FormInput/FormInput';
 import styles from './Form.module.scss';
 
 const Form = () => {
   return (
-    <form className={styles.form}>
-      {/* <input
-        className={styles.name}
-        type="text"
-        name="name"
-        required
-        placeholder="name"
-      />
-      <input
-        className={styles.email}
-        type="email"
-        name="email"
-        required
-        placeholder="email"
-      />
-      <input
-        type="text"
-        name="subject"
-        className={styles.subject}
-        required
-        placeholder="subject"
-      />
-      <input
-        type="textarea"
-        name="message"
-        className={styles.message}
-        required
-        placeholder="message"
-      /> */}
+    <form
+      className={styles.form}
+      autoComplete="off"
+      method="POST"
+      action="https://formsubmit.io/send/148d4ece-491f-4206-a9f4-7c42b4c583f2"
+    >
+      <div className={styles.container}>
+        <input
+          className={styles.name}
+          type="text"
+          name="name"
+          required
+          placeholder="name"
+        />
+        <input
+          className={styles.email}
+          type="email"
+          name="email"
+          required
+          placeholder="email"
+        />
+        <input
+          type="text"
+          name="subject"
+          className={styles.subject}
+          required
+          placeholder="subject"
+        />
+        <textarea
+          name="message"
+          className={styles.message}
+          required
+          placeholder="message"
+        />
+        <input
+          type="hidden"
+          name="_redirect"
+          value="http://localhost:3000/thanks"
+        />
+      </div>
 
-      <FormInput name="name" type="text" />
-      <FormInput name="email" type="email" />
-      <FormInput name="subject" type="text" />
-      <FormInput name="message" type="textarea" />
+      <div className={styles.submitContainer}>
+        <button className={styles.submit} type="submit">
+          send
+        </button>
+      </div>
     </form>
   );
 };

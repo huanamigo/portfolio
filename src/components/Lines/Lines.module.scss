@@ -1,0 +1,85 @@
+.container {
+  position: relative;
+  height: 100vh;
+  top: 50%;
+  transform: rotate(-90deg) translate(100%, 50%);
+  transform-origin: bottom right;
+}
+
+.line {
+  position: absolute;
+  height: 10px;
+  animation: lineAnimation 4s 5s infinite linear;
+  background: #ccff00;
+}
+
+.line1 {
+  left: 0;
+  animation-delay: 2.3s;
+}
+
+.line2 {
+  left: 0;
+  top: 40px;
+  animation-delay: 3.6s;
+}
+.line3 {
+  left: 0;
+  top: 70px;
+  animation-delay: 6.1s;
+}
+.line4 {
+  right: 0;
+  top: 100px;
+  animation-delay: 4.9s;
+}
+.line5 {
+  left: 0;
+  top: 130px;
+  animation-delay: 1.3s;
+}
+.line6 {
+  right: 0;
+  top: 160px;
+  animation-delay: 3.2s;
+}
+.line7 {
+  right: 0;
+  top: 190px;
+  animation-delay: 2.7s;
+}
+.line8 {
+  left: 0;
+  top: 220px;
+  animation-delay: 8.1s;
+}
+.line9 {
+  left: 0;
+  top: 250px;
+  animation-delay: 6.9s;
+}
+.line10 {
+  right: 0;
+  top: 280px;
+  animation-delay: 5.6s;
+}
+.line11 {
+  right: 0;
+  top: 310px;
+  animation-delay: 4.4s;
+}
+.line12 {
+  right: 0;
+  top: 340px;
+  animation-delay: 3.9s;
+}
+
+@keyframes lineAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+    opacity: 0;
+  }
+}
