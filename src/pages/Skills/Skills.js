@@ -20,7 +20,7 @@ const Skills = () => {
           I’m always curious to learn more!
         </p>
       </div>
-      <div>
+      <div className={styles.carousel}>
         <SkillsCarousel />
       </div>
     </motion.div>

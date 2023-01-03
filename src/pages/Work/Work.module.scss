@@ -36,6 +36,12 @@
       background-color: black;
       color: $main;
       padding: 10px 20px;
+      transition: all 200ms ease;
+
+      &:hover {
+        background-color: $main;
+        color: black;
+      }
     }
   }
 
@@ -58,5 +64,14 @@
   }
   &:nth-child(4) {
     background-image: url('./assets/task.jpg');
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    padding-left: 0;
+    margin-left: 0;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100vw;
   }
 }

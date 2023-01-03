@@ -19,9 +19,9 @@ const Text = () => {
 
       <div className={`${styles.title}`}>
         <span className={`${styles.block} blockAnimation3`}></span>
-        <h1 className={`${styles.letter} textAnimation3`}>
+        <p className={`${styles.letter} textAnimation3`}>
           a Frontend Developer
-        </h1>
+        </p>
       </div>
     </div>
   );

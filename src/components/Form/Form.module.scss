@@ -46,4 +46,34 @@
   background-color: $main;
   border: none;
   cursor: pointer;
+  transition: all 200ms ease;
+
+  &:hover {
+    background-color: $background;
+    color: $main;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 20px;
+    width: 100vw;
+
+    > input,
+    textarea {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .submit {
+    margin: 0 auto;
+
+    &Container {
+      display: flex;
+    }
+  }
 }

@@ -30,6 +30,33 @@
     left: 100%;
   }
   to {
-    left: -4200px;
+    left: -4400px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .monitor {
+    position: fixed;
+    height: 100vh;
+    top: 0vh;
+    transform: rotate(0) translate(0%, 10%);
+    z-index: -2;
+
+    p {
+      font-size: 50vh;
+      color: gray;
+      animation: move 50s infinite linear;
+
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes move {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -27000px;
+    }
   }
 }

@@ -54,3 +54,37 @@
   color: $main;
   font-size: 4vw;
 }
+
+@media (max-width: 1300px) {
+  .container {
+    margin: 0;
+    padding: 20px;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 200vh;
+  }
+
+  .header {
+    font-size: clamp(20px, 10vw, 80px);
+  }
+
+  .head {
+    padding-bottom: 30%;
+
+    p {
+      font-size: clamp(16px, 4vw, 28px) !important;
+    }
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .headerWrapper {
+    padding-top: 40px;
+
+    padding-bottom: 10% !important;
+  }
+}

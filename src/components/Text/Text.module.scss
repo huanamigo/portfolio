@@ -25,3 +25,13 @@
     z-index: 3;
   }
 }
+
+@media (max-width: 1300px) {
+  .letter {
+    font-size: clamp(56px, 15vw, 100px);
+  }
+
+  .title {
+    width: 90%;
+  }
+}

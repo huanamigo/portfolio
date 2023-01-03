@@ -52,3 +52,21 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 1300px) {
+  .brackets {
+    font-size: 10vw;
+  }
+
+  .main {
+    font-size: 5vw !important;
+  }
+
+  .wrapper {
+    &:hover {
+      .secondary {
+        font-size: 0vw !important;
+      }
+    }
+  }
+}

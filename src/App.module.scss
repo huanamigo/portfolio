@@ -6,3 +6,9 @@
   position: relative;
   max-height: 100vh;
 }
+
+@media (max-width: 1300px) {
+  .app {
+    max-height: 200vh;
+  }
+}

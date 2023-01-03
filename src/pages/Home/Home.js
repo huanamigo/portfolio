@@ -17,7 +17,7 @@ const Home = () => {
       <div className={styles.text}>
         <Text />
       </div>
-      <div>
+      <div className={styles.lineContainer}>
         <Lines />
       </div>
       <NavLink to="/contact">{<ContactBtn />}</NavLink>

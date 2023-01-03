@@ -25,7 +25,8 @@ const Home = () => {
             <i className="fa-solid fa-location-dot"></i> Poland, 34-300 Żywiec
           </p>
           <p>
-            <i className="fa-solid fa-phone"></i> +48 883 655 934
+            <i className="fa-solid fa-phone"></i>
+            <a href="tel:+48883655934">+48 883 655 934</a>
           </p>
           <p>
             <i className="fa-solid fa-envelope"></i>{' '}
