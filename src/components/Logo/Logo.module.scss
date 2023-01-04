@@ -20,7 +20,7 @@
   line-height: 1;
 
   .secondary {
-    color: gray;
+    color: $gray;
     display: inline-block;
     font-size: 0rem;
     opacity: 0;
@@ -28,7 +28,7 @@
   }
 
   .main {
-    color: gray;
+    color: #a0a0a0;
     font-size: 1rem;
     transition: all 1s ease;
   }

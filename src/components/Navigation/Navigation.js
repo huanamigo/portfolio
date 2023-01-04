@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import HamburgerBtn from '../HamburgerBtn/HamburgerBtn';
 import Logo from '../Logo/Logo';
 import styles from './Navigation.module.scss';
 
 const Navigation = () => {
   const [isHidden, hide] = useState(true);
-
-  const hideNavbar = () => {
-    hide(!isHidden);
-  };
 
   return (
     <div className={styles.navbar}>
@@ -18,7 +15,7 @@ const Navigation = () => {
         } ${styles.desktopNavbar}`}
       >
         <NavLink
-          onClick={() => hideNavbar()}
+          onClick={() => hide(!isHidden)}
           to="/"
           className={styles.logoLink}
         >
@@ -30,17 +27,17 @@ const Navigation = () => {
             className={({ isActive }) =>
               isActive ? styles.active : styles.link
             }
-            onClick={() => hideNavbar()}
+            onClick={() => hide(!isHidden)}
             to="/skills"
           >
-            skills
+            about
           </NavLink>
 
           <NavLink
             className={({ isActive }) =>
               isActive ? styles.active : styles.link
             }
-            onClick={() => hideNavbar()}
+            onClick={() => hide(!isHidden)}
             to="/work"
           >
             work
@@ -50,7 +47,7 @@ const Navigation = () => {
             className={({ isActive }) =>
               isActive ? styles.active : styles.link
             }
-            onClick={() => hideNavbar()}
+            onClick={() => hide(!isHidden)}
             to="/contact"
           >
             contact
@@ -79,8 +76,17 @@ const Navigation = () => {
         </div>
       </div>
 
-      <button onClick={() => hideNavbar()} className={styles.hamButton}>
-        <i className="fa-solid fa-bars"></i>
+      <button
+        name="navigation"
+        onClick={() => hide(!isHidden)}
+        className={styles.hamButton}
+      >
+        {/* {isHidden ? (
+          <i className="fa-solid fa-bars"></i>
+        ) : (
+          <i className="fa-solid fa-xmark"></i>
+        )} */}
+        <HamburgerBtn active={isHidden} />
       </button>
     </div>
   );

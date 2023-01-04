@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './App.module.scss';
-// import Cursor from './components/Cursor/Cursor';
+import Cursor from './components/Cursor/Cursor';
 import Navigation from './components/Navigation/Navigation';
 import Home from './pages/Home/Home';
 import Contact from './pages/Contact/Contact';
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className={styles.app}>
-      {/* <Cursor /> */}
+      <Cursor />
       <Navigation />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>

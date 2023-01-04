@@ -17,21 +17,32 @@
 }
 
 .wrapper {
+  position: relative;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: black;
-  filter: blur(10px);
   transition: all 100ms ease;
-  z-index: 2;
+
+  .background {
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    &:hover {
+      filter: blur(0);
+    }
+  }
 
   a {
     text-decoration: none;
     opacity: 0;
+    z-index: 3;
+
     p {
       background-color: black;
       color: $main;
@@ -46,23 +57,24 @@
   }
 
   &:hover {
-    filter: blur(0);
-
     a {
       opacity: 1;
     }
   }
 
-  &:nth-child(1) {
+  .rps {
     background-image: url('./assets/rps.jpg');
   }
-  &:nth-child(2) {
+
+  .password {
     background-image: url('./assets/password.jpg');
   }
-  &:nth-child(3) {
+
+  .ewid {
     background-image: url('./assets/ewid.jpg');
   }
-  &:nth-child(4) {
+
+  .task {
     background-image: url('./assets/task.jpg');
   }
 }
@@ -73,5 +85,21 @@
     margin-left: 0;
     grid-template-columns: 1fr 1fr;
     max-width: 100vw;
+  }
+
+  .wrapper {
+    a {
+      text-align: center;
+      width: 100%;
+      opacity: 1;
+      filter: blur(0);
+    }
+
+    &:hover,
+    &:active {
+      .background {
+        filter: blur(0);
+      }
+    }
   }
 }

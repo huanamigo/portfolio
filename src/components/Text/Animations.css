@@ -1,31 +1,31 @@
 .blockAnimation {
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 .textAnimation {
   animation: mainFadeIn 2s forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .blockAnimation2 {
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .textAnimation2 {
   animation: mainFadeIn 2s forwards;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .blockAnimation3 {
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  animation-delay: 5s;
+  animation-delay: 4s;
 }
 
 .textAnimation3 {
   animation: mainFadeIn 2s forwards;
-  animation-delay: 6s;
+  animation-delay: 5s;
   font-size: 1.7vw !important;
   color: gray;
 }

@@ -20,7 +20,7 @@ const Text = () => {
       <div className={`${styles.title}`}>
         <span className={`${styles.block} blockAnimation3`}></span>
         <p className={`${styles.letter} textAnimation3`}>
-          a Frontend Developer
+          a <span className={styles.spec}>F</span>rontend Developer
         </p>
       </div>
     </div>

@@ -13,6 +13,7 @@
 .logoLink {
   width: 100%;
   height: 100px;
+  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,14 +34,15 @@
   position: absolute;
   bottom: 20%;
   display: flex;
-  width: 50%;
-  transition: all 200ms ease;
+  width: 60%;
+
   cursor: pointer;
 
   justify-content: space-around;
   i {
-    color: gray;
-
+    color: $gray;
+    font-size: 1.5rem;
+    transition: all 200ms ease;
     &:hover {
       color: $main;
     }
@@ -53,9 +55,10 @@
 }
 
 .link {
-  color: gray;
+  color: $gray;
   text-decoration: none;
   transition: all 200ms ease;
+  position: relative;
 
   &:hover {
     color: white;
@@ -67,26 +70,20 @@
 }
 
 @media (max-width: 1300px) {
-  // .mobileNavbar {
-  //   display: initial;
-  //   background-color: black;
-  //   z-index: 2;
-  //   position: fixed;
-  //   top: 0;
-  //   right: 0;
-  // }
-
   .hamButton {
-    display: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 10px;
-    right: 20px;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+
     color: $main;
     z-index: 1;
     border: none;
     background-color: transparent;
-    width: 4rem;
-    height: 4rem;
     padding: 0;
     font-size: 2rem;
   }

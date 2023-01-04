@@ -1,8 +1,10 @@
+@import '/src/variables.scss';
+
 .line {
   position: absolute;
   height: 10px;
   animation: lineAnimation 4s 5s infinite linear;
-  background: #ccff00;
+  background: $main;
 }
 
 .line1 {

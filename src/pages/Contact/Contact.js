@@ -14,7 +14,10 @@ const Home = () => {
       <div className={styles.head}>
         <div className={styles.headerWrapper}>
           <h1 className={styles.header}>Contact me!</h1>
-          <p>Tell me about your project and let's create something together.</p>
+          <p>
+            Have a question for me? Have a job offer? Want to create something
+            together? Contact me and let's talk!
+          </p>
         </div>
 
         <div className={styles.info}>

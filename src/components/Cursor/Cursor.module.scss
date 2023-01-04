@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 * {
-  cursor: none !important;
+  cursor: none;
 }
 
 .cursor {
@@ -17,4 +17,14 @@
   transform: scale(1.4);
   mix-blend-mode: difference;
   background: $main;
+}
+
+@media (max-width: 1300px) {
+  * {
+    cursor: initial;
+  }
+
+  .cursor {
+    display: none;
+  }
 }

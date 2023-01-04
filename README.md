@@ -2,7 +2,6 @@
 
 todo:
 
-- resume download
-- skills tab
+- skills tab?
 - finish mobile view
-- add about me section
+- thanks page on mobile
