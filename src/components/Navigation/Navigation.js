@@ -64,7 +64,7 @@ const Navigation = () => {
           </a>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/artur-furtak-8109b7257/"
+            href="https://www.linkedin.com/in/artur-furtak"
             rel="noreferrer"
           >
             <i className="fa-brands fa-linkedin"></i>
@@ -81,11 +81,6 @@ const Navigation = () => {
         onClick={() => hide(!isHidden)}
         className={styles.hamButton}
       >
-        {/* {isHidden ? (
-          <i className="fa-solid fa-bars"></i>
-        ) : (
-          <i className="fa-solid fa-xmark"></i>
-        )} */}
         <HamburgerBtn active={isHidden} />
       </button>
     </div>

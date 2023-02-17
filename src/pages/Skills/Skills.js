@@ -3,7 +3,7 @@ import SkillsCarousel from '../../components/SkillsCarousel/SkillsCarousel';
 import styles from './Skills.module.scss';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import CV from './CV_Artur_Furtak.pdf';
+import CV from './Artur_Furtak_Resume.pdf';
 
 const Skills = () => {
   return (
