@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.d09b8fba.css",
-    "main.js": "/static/js/main.07e9e0c9.js",
+    "main.css": "/static/css/main.e48ddf20.css",
+    "main.js": "/static/js/main.837f9da0.js",
     "static/media/ewid.jpg": "/static/media/ewid.f99676f8084c4f4c96b8.jpg",
     "static/media/rps.jpg": "/static/media/rps.d29ecec3536517536534.jpg",
+    "static/media/Artur_Furtak_Resume.pdf": "/static/media/Artur_Furtak_Resume.4a2d82989909ab48b58a.pdf",
     "static/media/task.jpg": "/static/media/task.26ea629ec488a3e9fd4a.jpg",
     "static/media/password.jpg": "/static/media/password.8c7adac271863b7cfbfc.jpg",
-    "static/media/Artur_Furtak_Resume.pdf": "/static/media/Artur_Furtak_Resume.97df342ee47d93bda001.pdf",
     "index.html": "/index.html",
-    "main.d09b8fba.css.map": "/static/css/main.d09b8fba.css.map",
-    "main.07e9e0c9.js.map": "/static/js/main.07e9e0c9.js.map"
+    "main.e48ddf20.css.map": "/static/css/main.e48ddf20.css.map",
+    "main.837f9da0.js.map": "/static/js/main.837f9da0.js.map"
   },
   "entrypoints": [
-    "static/css/main.d09b8fba.css",
-    "static/js/main.07e9e0c9.js"
+    "static/css/main.e48ddf20.css",
+    "static/js/main.837f9da0.js"
   ]
 }
