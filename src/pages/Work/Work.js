@@ -6,9 +6,10 @@ const Work = () => {
   return (
     <motion.div
       className={styles.container}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ x: -window.innerWidth }}
+      animate={{ x: 0 }}
+      transition={{ ease: 'easeInOut', duration: 1.5 }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
     >
       <div className={styles.wrapper}>
         <div className={`${styles.background} ${styles.rps}`}></div>

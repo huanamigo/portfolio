@@ -32,7 +32,15 @@ const Navigation = () => {
           >
             about
           </NavLink>
-
+          {/* <NavLink
+            className={({ isActive }) =>
+              isActive ? styles.active : styles.link
+            }
+            onClick={() => hide(!isHidden)}
+            to="/education"
+          >
+            education
+          </NavLink> */}
           <NavLink
             className={({ isActive }) =>
               isActive ? styles.active : styles.link

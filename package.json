@@ -1,7 +1,7 @@
 {
   "name": "portf",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://arturfurtak.online",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,7 +15,8 @@
     "react-router-dom": "^6.6.1",
     "react-scripts": "^5.0.1",
     "sass": "^1.56.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "webpack": ">=5.76.0"
   },
   "scripts": {
     "predeploy": "npm run build",

@@ -10,6 +10,7 @@ import StaraTomka from './pages/StaraTomka/StaraTomka';
 import Work from './pages/Work/Work';
 import { AnimatePresence } from 'framer-motion';
 import Thanks from './pages/Thanks/Thanks';
+import Education from './pages/Education/Education';
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
           <Route path="/" exact element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
+          {/* <Route path="/education" element={<Education />} /> */}
           <Route path="/work" element={<Work />} />
           <Route path="/thanks" element={<Thanks />} />
           <Route path="/staratomka" element={<StaraTomka />} />

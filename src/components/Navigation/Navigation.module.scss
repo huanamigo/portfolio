@@ -1,5 +1,10 @@
 @import '/src/variables.scss';
 
+.navbar {
+  position: absolute;
+  z-index: 1;
+}
+
 .desktopNavbar {
   background-color: black;
   width: 10rem;

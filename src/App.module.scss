@@ -1,6 +1,8 @@
+@import './variables.scss';
+
 .app {
   min-height: 100vh;
-  background-color: black;
+  background-color: $background;
   overflow: hidden;
   overflow-x: hidden;
   position: relative;

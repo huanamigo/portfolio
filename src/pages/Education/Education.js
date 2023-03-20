@@ -1,11 +1,8 @@
 import React from 'react';
-import SkillsCarousel from '../../components/SkillsCarousel/SkillsCarousel';
-import styles from './Skills.module.scss';
+import styles from './Education.module.scss';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import CV from './Artur_Furtak_Resume.pdf';
 
-const Skills = () => {
+const Education = () => {
   return (
     <motion.div
       className={styles.container}
@@ -29,27 +26,11 @@ const Skills = () => {
           medium websites, applications, animations and coding interactive
           layouts.
         </p>
-        <p className={styles.desc}>
-          Download my{' '}
-          <a className={styles.link} href={CV} target="_blank" rel="noreferrer">
-            resume
-          </a>
-          , check{' '}
-          <Link className={styles.link} to="/work">
-            work
-          </Link>{' '}
-          tab or just{' '}
-          <Link className={styles.link} to="/contact">
-            contact
-          </Link>{' '}
-          me for more information.
-        </p>
+        <p className={styles.desc}>Download my , check </p>
       </div>
-      <div className={styles.carousel}>
-        <SkillsCarousel />
-      </div>
+      <div className={styles.carousel}></div>
     </motion.div>
   );
 };
 
-export default Skills;
+export default Education;
