@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './App.module.scss';
 import Cursor from './components/Cursor/Cursor';
 import Navigation from './components/Navigation/Navigation';
@@ -10,15 +10,29 @@ import StaraTomka from './pages/StaraTomka/StaraTomka';
 import Work from './pages/Work/Work';
 import { AnimatePresence } from 'framer-motion';
 import Thanks from './pages/Thanks/Thanks';
-import Education from './pages/Education/Education';
+// import Education from './pages/Education/Education';
 
 function App() {
+  const [showCursor, toggleShowCursor] = useState(true);
   const location = useLocation();
+
+  const handleCursor = () => {
+    toggleShowCursor(!showCursor);
+    if (showCursor) {
+      document
+        .querySelector(':root')
+        .style.setProperty('--cursor-status', 'default');
+    } else {
+      document
+        .querySelector(':root')
+        .style.setProperty('--cursor-status', 'none');
+    }
+  };
 
   return (
     <div className={styles.app}>
-      <Cursor />
-      <Navigation />
+      {showCursor ? <Cursor /> : null}
+      <Navigation handleCursor={handleCursor} />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" exact element={<Home />} />

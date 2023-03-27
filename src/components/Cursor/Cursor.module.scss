@@ -1,9 +1,5 @@
 @import '../../variables.scss';
 
-* {
-  cursor: none;
-}
-
 .cursor {
   position: fixed;
   height: 12px;
@@ -12,14 +8,14 @@
   background-color: $main;
   transform: rotate(0deg) translate(-50%, -50%);
   pointer-events: none;
-  z-index: 11;
+  z-index: 2137;
 
   transform: scale(1.4);
   mix-blend-mode: difference;
   background: $main;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
   * {
     cursor: initial;
   }

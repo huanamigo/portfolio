@@ -4,7 +4,7 @@ import HamburgerBtn from '../HamburgerBtn/HamburgerBtn';
 import Logo from '../Logo/Logo';
 import styles from './Navigation.module.scss';
 
-const Navigation = () => {
+const Navigation = ({ handleCursor }) => {
   const [isHidden, hide] = useState(true);
 
   return (
@@ -21,7 +21,9 @@ const Navigation = () => {
         >
           {<Logo />}
         </NavLink>
-
+        <div className={styles.cursor}>
+          <i onClick={handleCursor} className="fa-solid fa-arrow-pointer"></i>
+        </div>
         <div className={styles.container}>
           <NavLink
             className={({ isActive }) =>
@@ -72,8 +74,8 @@ const Navigation = () => {
           </a>
           <a
             target="_blank"
-            href="https://www.linkedin.com/in/artur-furtak"
             rel="noreferrer"
+            href="https://www.linkedin.com/in/artur-furtak"
           >
             <i className="fa-brands fa-linkedin"></i>
           </a>

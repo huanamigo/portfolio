@@ -1,5 +1,9 @@
 @import './variables.scss';
 
+:root {
+  --cursor-status: none;
+}
+
 .app {
   min-height: 100vh;
   background-color: $background;
@@ -13,4 +17,8 @@
   .app {
     max-height: 200vh;
   }
+}
+
+* {
+  cursor: var(--cursor-status);
 }

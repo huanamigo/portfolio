@@ -24,6 +24,10 @@
   align-items: center;
   transition: all 100ms ease;
 
+  .secondary {
+    font-size: 12px;
+  }
+
   .background {
     position: absolute;
     background-position: center;
@@ -32,32 +36,47 @@
     filter: blur(5px);
     height: 100%;
     width: 100%;
-    z-index: 2;
+    z-index: 1;
     &:hover {
       filter: blur(0);
     }
   }
 
-  a {
-    text-decoration: none;
-    opacity: 0;
+  .linksWrapper {
     z-index: 3;
+    text-align: center;
 
-    p {
+    a {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      opacity: 0;
+
+      p {
+        background-color: black;
+        color: $main;
+        padding: 10px 20px;
+        transition: all 200ms ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $main;
+          color: black;
+        }
+      }
+    }
+    .secondary {
       background-color: black;
       color: $main;
       padding: 10px 20px;
       transition: all 200ms ease;
-
-      &:hover {
-        background-color: $main;
-        color: black;
-      }
+      opacity: 0;
     }
   }
 
   &:hover {
-    a {
+    a,
+    .secondary {
       opacity: 1;
     }
   }
@@ -79,7 +98,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
   .container {
     padding-left: 0;
     margin-left: 0;

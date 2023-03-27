@@ -13,30 +13,67 @@ const Work = () => {
     >
       <div className={styles.wrapper}>
         <div className={`${styles.background} ${styles.rps}`}></div>
-        <a href="https://huanamigo.github.io/rock-paper-scissors-game/">
-          <p>Rock Paper Scissors Game</p>
-        </a>
+
+        <div className={styles.linksWrapper}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://huanamigo.github.io/rock-paper-scissors-game/"
+          >
+            <p>Rock Paper Scissors Game</p>
+          </a>
+          <p className={styles.secondary}>RPS game made with React and SCSS</p>
+        </div>
       </div>
 
       <div className={styles.wrapper}>
         <div className={`${styles.background} ${styles.password}`}></div>
-        <a href="https://huanamigo.github.io/password-generator/">
-          <p>Password Generator</p>
-        </a>
+
+        <div className={styles.linksWrapper}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://huanamigo.github.io/password-generator/"
+          >
+            <p>Password Generator</p>
+          </a>
+          <p className={styles.secondary}>
+            Customizable password generator made with React and SCSS
+          </p>
+        </div>
       </div>
 
       <div className={styles.wrapper}>
         <div className={`${styles.background} ${styles.ewid}`}></div>
-        <a href="https://huanamigo.github.io/kalkulator-ewidencji-godzin/">
-          <p>Work Time Calculator</p>
-        </a>
+        <div className={styles.linksWrapper}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://huanamigo.github.io/kalkulator-ewidencji-godzin/"
+          >
+            <p>Work Time Calculator</p>
+          </a>
+          <p className={styles.secondary}>
+            Made for the needs of quick filling in the form for a large
+            workplace
+          </p>
+        </div>
       </div>
 
       <div className={styles.wrapper}>
         <div className={`${styles.background} ${styles.task}`}></div>
-        <a href="https://huanamigo.github.io/react-todo-app/">
-          <p className={styles.link}>ToDo app</p>
-        </a>
+        <div className={styles.linksWrapper}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://huanamigo.github.io/react-todo-app/"
+          >
+            <p className={styles.link}>ToDo app</p>
+          </a>
+          <p className={styles.secondary}>
+            Simple app with local-storage based memory
+          </p>
+        </div>
       </div>
     </motion.div>
   );

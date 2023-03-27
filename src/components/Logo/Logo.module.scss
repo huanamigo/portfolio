@@ -18,6 +18,9 @@
   display: flex;
   align-items: center;
   line-height: 1;
+  * {
+    cursor: pointer;
+  }
 
   .secondary {
     color: $gray;
@@ -53,7 +56,7 @@
   align-items: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 700px) {
   .brackets {
     font-size: 10vw;
   }
