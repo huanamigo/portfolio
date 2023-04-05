@@ -11,7 +11,7 @@
   color: whitesmoke;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   overflow-x: hidden;
   position: relative;
 }
@@ -96,6 +96,10 @@
   .task {
     background-image: url('./assets/task.jpg');
   }
+
+  .pizza {
+    background-image: url('./assets/pizza-bg.jpg');
+  }
 }
 
 @media (max-width: 700px) {
@@ -103,10 +107,15 @@
     padding-left: 0;
     margin-left: 0;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'jeden dwa'
+      'trzy cztery'
+      'piec piec';
     max-width: 100vw;
   }
 
   .wrapper {
+    width: 50vw;
     a {
       text-align: center;
       width: 100%;
@@ -119,6 +128,23 @@
       .background {
         filter: blur(0);
       }
+    }
+
+    &:nth-child(1) {
+      grid-area: jeden;
+    }
+    &:nth-child(2) {
+      grid-area: dwa;
+    }
+    &:nth-child(3) {
+      grid-area: trzy;
+    }
+    &:nth-child(4) {
+      grid-area: cztery;
+    }
+    &:nth-child(5) {
+      grid-area: piec;
+      width: 100vw;
     }
   }
 }

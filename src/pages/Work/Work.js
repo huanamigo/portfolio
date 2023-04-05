@@ -75,6 +75,21 @@ const Work = () => {
           </p>
         </div>
       </div>
+      <div className={styles.wrapper}>
+        <div className={`${styles.background} ${styles.pizza}`}></div>
+        <div className={styles.linksWrapper}>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://huanamigo.github.io/pizza-place/"
+          >
+            <p className={styles.link}>Pizza Place</p>
+          </a>
+          <p className={styles.secondary}>
+            Pizza ordering site using API and TypeScript
+          </p>
+        </div>
+      </div>
     </motion.div>
   );
 };
