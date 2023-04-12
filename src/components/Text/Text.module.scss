@@ -1,7 +1,7 @@
 @import '/src/variables.scss';
 
 .letter {
-  font-size: 5vw;
+  font-size: 6vw;
   font-weight: 400;
   opacity: 0;
   z-index: 2;
@@ -26,12 +26,16 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: $lg-screen) {
   .letter {
-    font-size: clamp(56px, 15vw, 100px);
+    font-size: clamp(56px, 12vw, 100px);
   }
 
   .title {
     width: 90%;
+
+    p {
+      font-size: 25px;
+    }
   }
 }

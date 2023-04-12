@@ -82,7 +82,7 @@ i {
   bottom: 7%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: $md-screen) {
   .hamButton {
     display: flex;
     justify-content: center;

@@ -10,7 +10,7 @@ const Skills = () => {
     <motion.div
       className={styles.container}
       initial={{ x: -window.innerWidth }}
-      animate={{ x: 0 }}
+      animate={{ x: 0.01 }}
       transition={{ ease: 'easeOut', duration: 1 }}
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
     >

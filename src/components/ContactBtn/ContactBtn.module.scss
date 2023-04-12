@@ -18,7 +18,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $lg-screen) {
   .contact {
     top: 90svh;
     left: 50%;

@@ -66,6 +66,7 @@ const Navigation = ({ handleCursor }) => {
 
         <div className={styles.social}>
           <a
+            aria-label="Github lin"
             target="_blank"
             href="https://github.com/huanamigo"
             rel="noreferrer"
@@ -73,6 +74,7 @@ const Navigation = ({ handleCursor }) => {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
+            aria-label="Linkedin link"
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/artur-furtak"
@@ -80,13 +82,14 @@ const Navigation = ({ handleCursor }) => {
             <i className="fa-brands fa-linkedin"></i>
           </a>
 
-          <a href="mailto:arturfurtak5@gmail.com">
+          <a aria-label="Mail" href="mailto:arturfurtak5@gmail.com">
             <i className="fa-solid fa-envelope"></i>
           </a>
         </div>
       </div>
 
       <button
+        aria-label="Navigation Button"
         name="navigation"
         onClick={() => hide(!isHidden)}
         className={styles.hamButton}

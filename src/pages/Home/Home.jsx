@@ -20,7 +20,7 @@ const Home = () => {
       <div className={styles.lineContainer}>
         <Lines />
       </div>
-      <NavLink to="/contact">{<ContactBtn />}</NavLink>
+      <NavLink to="/contact">{<ContactBtn  className={styles.contact}/>}</NavLink>
     </motion.div>
   );
 };

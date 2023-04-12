@@ -57,7 +57,7 @@
   font-size: 4vw;
 }
 
-@media (max-width: 700px) {
+@media (max-width: $md-screen) {
   .container {
     padding: 0;
     margin: 0;

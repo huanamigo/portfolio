@@ -11,7 +11,10 @@
   color: whitesmoke;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'jeden dwa trzy'
+    'cztery piec piec';
   overflow-x: hidden;
   position: relative;
 }
@@ -24,12 +27,33 @@
   align-items: center;
   transition: all 100ms ease;
 
+  &:nth-child(1) {
+    grid-area: jeden;
+  }
+  &:nth-child(2) {
+    grid-area: dwa;
+  }
+  &:nth-child(3) {
+    grid-area: trzy;
+  }
+  &:nth-child(4) {
+    grid-area: cztery;
+  }
+  &:nth-child(5) {
+    grid-area: piec;
+  }
+
   .secondary {
     font-size: 12px;
   }
 
   .background {
     position: absolute;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +69,7 @@
   .linksWrapper {
     z-index: 3;
     text-align: center;
+    width: 100%;
 
     a {
       display: block;
@@ -80,29 +105,20 @@
       opacity: 1;
     }
   }
+}
 
-  .rps {
-    background-image: url('./assets/rps.jpg');
-  }
-
-  .password {
-    background-image: url('./assets/password.jpg');
-  }
-
-  .ewid {
-    background-image: url('./assets/ewid.jpg');
-  }
-
-  .task {
-    background-image: url('./assets/task.jpg');
-  }
-
-  .pizza {
-    background-image: url('./assets/pizza-bg.jpg');
+@media (max-width: $lg-screen) and (min-width: $md-screen) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'jeden dwa'
+      'trzy cztery'
+      'piec piec';
+    max-width: 100vw;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: $md-screen) {
   .container {
     padding-left: 0;
     margin-left: 0;
@@ -123,28 +139,15 @@
       filter: blur(0);
     }
 
+    &:nth-child(5) {
+      width: 100vw;
+    }
+
     &:hover,
     &:active {
       .background {
         filter: blur(0);
       }
-    }
-
-    &:nth-child(1) {
-      grid-area: jeden;
-    }
-    &:nth-child(2) {
-      grid-area: dwa;
-    }
-    &:nth-child(3) {
-      grid-area: trzy;
-    }
-    &:nth-child(4) {
-      grid-area: cztery;
-    }
-    &:nth-child(5) {
-      grid-area: piec;
-      width: 100vw;
     }
   }
 }

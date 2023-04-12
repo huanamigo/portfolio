@@ -6,7 +6,7 @@ import Home from './pages/Home/Home';
 import Contact from './pages/Contact/Contact';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import Skills from './pages/Skills/Skills';
-import StaraTomka from './pages/StaraTomka/StaraTomka';
+// import StaraTomka from './pages/StaraTomka/StaraTomka';
 import Work from './pages/Work/Work';
 import { AnimatePresence } from 'framer-motion';
 import Thanks from './pages/Thanks/Thanks';
@@ -41,7 +41,7 @@ function App() {
           {/* <Route path="/education" element={<Education />} /> */}
           <Route path="/work" element={<Work />} />
           <Route path="/thanks" element={<Thanks />} />
-          <Route path="/staratomka" element={<StaraTomka />} />
+          {/* <Route path="/staratomka" element={<StaraTomka />} /> */}
         </Routes>
       </AnimatePresence>
     </div>

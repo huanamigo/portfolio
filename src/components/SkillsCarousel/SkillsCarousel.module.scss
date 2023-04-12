@@ -34,7 +34,7 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: $md-screen) {
   .monitor {
     position: fixed;
     height: 100vh;

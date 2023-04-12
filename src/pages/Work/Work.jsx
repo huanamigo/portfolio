@@ -1,8 +1,15 @@
 import React from 'react';
 import styles from './Work.module.scss';
 import { motion } from 'framer-motion';
+import ewidImage from './assets/ewid.webp'
+import rpsImage from './assets/rps.webp'
+import passwordImage from './assets/password.webp'
+import taskImage from './assets/task.webp'
+import pizzaImage from './assets/pizza-bg.webp'
 
 const Work = () => {
+
+
   return (
     <motion.div
       className={styles.container}
@@ -12,7 +19,9 @@ const Work = () => {
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
     >
       <div className={styles.wrapper}>
-        <div className={`${styles.background} ${styles.rps}`}></div>
+        <div className={styles.background}>
+        <img rel="preload" src={rpsImage} alt="RPS Background" />
+        </div>
 
         <div className={styles.linksWrapper}>
           <a
@@ -27,7 +36,9 @@ const Work = () => {
       </div>
 
       <div className={styles.wrapper}>
-        <div className={`${styles.background} ${styles.password}`}></div>
+        <div className={styles.background}>
+        <img rel="preload" src={passwordImage} alt="Password Generator Background" />
+        </div>
 
         <div className={styles.linksWrapper}>
           <a
@@ -44,7 +55,9 @@ const Work = () => {
       </div>
 
       <div className={styles.wrapper}>
-        <div className={`${styles.background} ${styles.ewid}`}></div>
+        <div className={styles.background}>
+          <img rel="preload" src={ewidImage} alt="Work Time Background" />
+        </div>
         <div className={styles.linksWrapper}>
           <a
             target="_blank"
@@ -61,7 +74,9 @@ const Work = () => {
       </div>
 
       <div className={styles.wrapper}>
-        <div className={`${styles.background} ${styles.task}`}></div>
+        <div className={styles.background}>
+        <img rel="preload" src={taskImage} alt="Todo App Background" />
+        </div>
         <div className={styles.linksWrapper}>
           <a
             target="_blank"
@@ -76,7 +91,9 @@ const Work = () => {
         </div>
       </div>
       <div className={styles.wrapper}>
-        <div className={`${styles.background} ${styles.pizza}`}></div>
+        <div className={styles.background}>
+        <img rel="preload" src={pizzaImage} alt="Pizza Place Background" />
+        </div>
         <div className={styles.linksWrapper}>
           <a
             target="_blank"
