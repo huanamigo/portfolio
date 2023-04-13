@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import HamburgerBtn from '../HamburgerBtn/HamburgerBtn';
-import Logo from '../Logo/Logo';
+import Logo from './Logo/Logo';
 import styles from './Navigation.module.scss';
+import NavigationLink from './NavigationLink/NavigationLink';
+import HamburgerBtn from './HamburgerBtn/HamburgerBtn';
 
 const Navigation = ({ handleCursor }) => {
   const [isHidden, hide] = useState(true);
@@ -25,54 +26,24 @@ const Navigation = ({ handleCursor }) => {
           <i onClick={handleCursor} className="fa-solid fa-arrow-pointer"></i>
         </div>
         <div className={styles.container}>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            onClick={() => hide(!isHidden)}
-            to="/skills"
-          >
-            about
-          </NavLink>
-          {/* <NavLink
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            onClick={() => hide(!isHidden)}
-            to="/education"
-          >
-            education
-          </NavLink> */}
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            onClick={() => hide(!isHidden)}
-            to="/work"
-          >
-            work
-          </NavLink>
+          
+          <NavigationLink name="about" hide={hide} isHidden={isHidden}/>
+          <NavigationLink name="work" hide={hide} isHidden={isHidden}/>
+          <NavigationLink name="contact" hide={hide} isHidden={isHidden}/>
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.link
-            }
-            onClick={() => hide(!isHidden)}
-            to="/contact"
-          >
-            contact
-          </NavLink>
+          
         </div>
 
         <div className={styles.social}>
           <a
-            aria-label="Github lin"
+            aria-label="Github link"
             target="_blank"
             href="https://github.com/huanamigo"
             rel="noreferrer"
           >
             <i className="fa-brands fa-github"></i>
           </a>
+          
           <a
             aria-label="Linkedin link"
             target="_blank"

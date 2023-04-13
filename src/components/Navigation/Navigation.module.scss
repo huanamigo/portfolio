@@ -55,24 +55,6 @@ i {
   }
 }
 
-.active {
-  color: $main;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.link {
-  color: $gray;
-  text-decoration: none;
-  transition: all 200ms ease;
-  position: relative;
-  cursor: pointer;
-
-  &:hover {
-    color: white;
-  }
-}
-
 .hamButton {
   display: none;
 }
