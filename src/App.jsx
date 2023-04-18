@@ -29,6 +29,10 @@ function App() {
     }
   };
 
+  document.addEventListener('focusin', function() {
+    console.log('focused: ', document.activeElement)
+  }, true);
+
   return (
     <div className={styles.app}>
       {showCursor ? <Cursor /> : null}

@@ -77,6 +77,13 @@
       text-decoration: none;
       opacity: 0;
 
+      &:focus,
+      &:hover {
+        opacity: 1;
+        .secondary {
+          opacity: 1;
+        }
+      }
       p {
         background-color: black;
         color: $main;
@@ -135,8 +142,12 @@
     a {
       text-align: center;
       width: 100%;
-      opacity: 1;
       filter: blur(0);
+    }
+
+    a,
+    .secondary {
+      opacity: 1 !important;
     }
 
     &:nth-child(5) {

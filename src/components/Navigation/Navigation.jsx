@@ -22,15 +22,16 @@ const Navigation = ({ handleCursor }) => {
         >
           {<Logo />}
         </NavLink>
+        
         <div className={styles.cursor}>
           <i onClick={handleCursor} className="fa-solid fa-arrow-pointer"></i>
         </div>
+
         <div className={styles.container}>
           
           <NavigationLink name="about" hide={hide} isHidden={isHidden}/>
           <NavigationLink name="work" hide={hide} isHidden={isHidden}/>
           <NavigationLink name="contact" hide={hide} isHidden={isHidden}/>
-
           
         </div>
 

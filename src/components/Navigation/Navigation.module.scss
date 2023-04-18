@@ -33,6 +33,10 @@
   justify-content: center;
   align-items: center;
   gap: 50px;
+
+  a:focus {
+    color: white;
+  }
 }
 
 .social {
@@ -40,18 +44,21 @@
   bottom: 20%;
   display: flex;
   width: 60%;
-
   justify-content: space-around;
-}
 
-i {
-  cursor: pointer;
-
-  color: $gray;
-  font-size: 1.5rem;
-  transition: all 200ms ease;
-  &:hover {
-    color: $main;
+  a:focus {
+    i {
+      color: $main;
+    }
+  }
+  i {
+    cursor: pointer;
+    color: $gray;
+    font-size: 1.5rem;
+    transition: all 200ms ease;
+    &:hover {
+      color: $main;
+    }
   }
 }
 
@@ -62,6 +69,16 @@ i {
 .cursor {
   position: absolute;
   bottom: 7%;
+
+  i {
+    cursor: pointer;
+    color: $gray;
+    font-size: 1.5rem;
+    transition: all 200ms ease;
+    &:hover {
+      color: $main;
+    }
+  }
 }
 
 @media (max-width: $md-screen) {

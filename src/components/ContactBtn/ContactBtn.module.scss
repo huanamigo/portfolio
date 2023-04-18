@@ -2,7 +2,6 @@
 
 .contact {
   background-color: $main;
-  color: black;
   position: fixed;
   right: 0;
   padding: 20px;
@@ -11,10 +10,20 @@
   transform-origin: bottom right;
   transition: all 200ms ease;
 
-  &:active,
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  &:focus,
   &:hover {
+    * {
+      cursor: pointer;
+    }
+    a {
+      color: $main;
+    }
     background-color: $background;
-    color: $main;
   }
 }
 
