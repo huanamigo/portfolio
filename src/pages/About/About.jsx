@@ -25,16 +25,11 @@ const Skills = () => {
         <p className={styles.desc}>
           I create effective and responsive websites that are fast, easy to use
           and built with best practices. The main area of my specialization is
-          frontend development (HTML, CSS, JS, React), creating small and
-          medium websites, applications, animations and coding interactive
-          layouts.
+          frontend development (HTML, CSS, JS, React), creating small and medium
+          websites, applications, animations and coding interactive layouts.
         </p>
         <p className={styles.desc}>
-          Download my{' '}
-          <a className={styles.link} href={CV} target="_blank" rel="noreferrer">
-            resume
-          </a>
-          , check{' '}
+          Check my{' '}
           <Link className={styles.link} to="/work">
             work
           </Link>{' '}

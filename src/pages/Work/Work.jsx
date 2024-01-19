@@ -1,15 +1,13 @@
 import React from 'react';
 import styles from './Work.module.scss';
 import { motion } from 'framer-motion';
-import ewidImage from './assets/ewid.webp'
-import rpsImage from './assets/rps.webp'
-import passwordImage from './assets/password.webp'
-import taskImage from './assets/task.webp'
-import pizzaImage from './assets/pizza-bg.webp'
+import ewidImage from './assets/ewid.webp';
+import rpsImage from './assets/rps.webp';
+import passwordImage from './assets/password.webp';
+import taskImage from './assets/task.webp';
+import pizzaImage from './assets/pizza-bg.webp';
 
 const Work = () => {
-
-
   return (
     <motion.div
       className={styles.container}
@@ -20,7 +18,7 @@ const Work = () => {
     >
       <div className={styles.wrapper}>
         <div className={styles.background}>
-        <img rel="preload" src={rpsImage} alt="RPS Background" />
+          <img rel="preload" src={rpsImage} alt="RPS Background" />
         </div>
 
         <div className={styles.linksWrapper}>
@@ -29,7 +27,7 @@ const Work = () => {
             rel="noreferrer"
             href="https://huanamigo.github.io/rock-paper-scissors-game/"
           >
-            <p>Rock Paper Scissors Game</p>
+            <p className={styles.link}>Rock Paper Scissors Game</p>
           </a>
           <p className={styles.secondary}>RPS game made with React and SCSS</p>
         </div>
@@ -37,7 +35,11 @@ const Work = () => {
 
       <div className={styles.wrapper}>
         <div className={styles.background}>
-        <img rel="preload" src={passwordImage} alt="Password Generator Background" />
+          <img
+            rel="preload"
+            src={passwordImage}
+            alt="Password Generator Background"
+          />
         </div>
 
         <div className={styles.linksWrapper}>
@@ -46,7 +48,7 @@ const Work = () => {
             rel="noreferrer"
             href="https://huanamigo.github.io/password-generator/"
           >
-            <p>Password Generator</p>
+            <p className={styles.link}>Password Generator</p>
           </a>
           <p className={styles.secondary}>
             Customizable password generator made with React and SCSS
@@ -64,7 +66,7 @@ const Work = () => {
             rel="noreferrer"
             href="https://huanamigo.github.io/kalkulator-ewidencji-godzin/"
           >
-            <p>Work Time Calculator</p>
+            <p className={styles.link}>Work Time Calculator</p>
           </a>
           <p className={styles.secondary}>
             Made for the needs of quick filling in the form for a large
@@ -75,7 +77,7 @@ const Work = () => {
 
       <div className={styles.wrapper}>
         <div className={styles.background}>
-        <img rel="preload" src={taskImage} alt="Todo App Background" />
+          <img rel="preload" src={taskImage} alt="Todo App Background" />
         </div>
         <div className={styles.linksWrapper}>
           <a
@@ -92,7 +94,7 @@ const Work = () => {
       </div>
       <div className={styles.wrapper}>
         <div className={styles.background}>
-        <img rel="preload" src={pizzaImage} alt="Pizza Place Background" />
+          <img rel="preload" src={pizzaImage} alt="Pizza Place Background" />
         </div>
         <div className={styles.linksWrapper}>
           <a
