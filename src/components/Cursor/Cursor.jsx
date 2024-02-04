@@ -4,10 +4,7 @@ import styles from './Cursor.module.scss';
 const Cursor = () => {
   const [mouseTop, moveMouseTop] = useState(0);
   const [mouseLeft, moveMouseLeft] = useState(0);
-  const [toMove, setToMove] = useState(true)
-
-
-
+  const [toMove, setToMove] = useState(true);
 
   // const moveCursor = (e) => {
 
@@ -21,23 +18,21 @@ const Cursor = () => {
   //     console.log("changed to true")
   //   }, 100)
   //   }
-    
+
   // };
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       moveMouseTop(e.clientY);
       moveMouseLeft(e.clientX);
-    }
+    };
 
-    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      window.removeEventListener('mousemove', handleMouseMove)
-    }
-
-  })
-
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  });
 
   return (
     <div

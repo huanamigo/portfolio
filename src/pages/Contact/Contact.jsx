@@ -26,7 +26,7 @@ const Home = () => {
             <i className="fa-solid fa-user"></i> Artur Furtak
           </p>
           <p>
-            <i className="fa-solid fa-location-dot"></i> Poland, 34-300 Żywiec
+            <i className="fa-solid fa-location-dot"></i> Poland, 40-833 Katowice
           </p>
           <p>
             <i className="fa-solid fa-phone"></i>

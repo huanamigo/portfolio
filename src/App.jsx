@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-// style
+// styles
 import styles from './App.module.scss';
+import './cursor.css';
 //components
 import Cursor from './components/Cursor/Cursor';
 import Navigation from './components/Navigation/Navigation';
@@ -18,19 +19,30 @@ import { AnimatePresence } from 'framer-motion';
 function App() {
   const [showCursor, toggleShowCursor] = useState(true);
   const location = useLocation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const handleCursor = () => {
     toggleShowCursor(!showCursor);
-    if (showCursor) {
-      document
-        .querySelector(':root')
-        .style.setProperty('--cursor-status', 'initial');
-    } else {
-      document
-        .querySelector(':root')
-        .style.setProperty('--cursor-status', 'none');
-    }
   };
+
+  useEffect(() => {
+    if (!showCursor || windowWidth < 700) {
+      document.querySelector(':root').classList.remove('cursor');
+    } else {
+      document.querySelector(':root').classList.add('cursor');
+    }
+  }, [showCursor, windowWidth]);
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, [handleWindowResize]);
 
   return (
     <div className={styles.app}>
