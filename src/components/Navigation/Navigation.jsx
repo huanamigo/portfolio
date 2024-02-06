@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import Logo from './Logo/Logo';
+
 import styles from './Navigation.module.scss';
+
+import Logo from './Logo/Logo';
 import NavigationLink from './NavigationLink/NavigationLink';
 import HamburgerBtn from './HamburgerBtn/HamburgerBtn';
+import NavigationBtn from './NavigationBtn/NavigationBtn';
 
 const Navigation = ({ handleCursor }) => {
   const [isHidden, hide] = useState(true);
@@ -22,41 +25,33 @@ const Navigation = ({ handleCursor }) => {
         >
           {<Logo />}
         </NavLink>
-        
+
         <div className={styles.cursor}>
           <i onClick={handleCursor} className="fa-solid fa-arrow-pointer"></i>
         </div>
 
         <div className={styles.container}>
-          
-          <NavigationLink name="about" hide={hide} isHidden={isHidden}/>
-          <NavigationLink name="work" hide={hide} isHidden={isHidden}/>
-          <NavigationLink name="contact" hide={hide} isHidden={isHidden}/>
-          
+          <NavigationLink name="about" hide={hide} isHidden={isHidden} />
+          <NavigationLink name="work" hide={hide} isHidden={isHidden} />
+          <NavigationLink name="contact" hide={hide} isHidden={isHidden} />
         </div>
 
         <div className={styles.social}>
-          <a
-            aria-label="Github link"
-            target="_blank"
-            href="https://github.com/huanamigo"
-            rel="noreferrer"
-          >
-            <i className="fa-brands fa-github"></i>
-          </a>
-          
-          <a
-            aria-label="Linkedin link"
-            target="_blank"
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/artur-furtak"
-          >
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-
-          <a aria-label="Mail" href="mailto:arturfurtak5@gmail.com">
-            <i className="fa-solid fa-envelope"></i>
-          </a>
+          <NavigationBtn
+            label="Github"
+            link={'https://github.com/huanamigo'}
+            styleName={'fa-brands fa-github'}
+          />
+          <NavigationBtn
+            label="Linkedin"
+            link={'https://www.linkedin.com/in/artur-furtak'}
+            styleName={'fa-brands fa-linkedin'}
+          />
+          <NavigationBtn
+            label="Mail"
+            link={'mailto:arturfurtak5@gmail.com'}
+            styleName={'fa-solid fa-envelope'}
+          />
         </div>
       </div>
 
