@@ -4,7 +4,7 @@ import WorkImage from '../../components/WorkImage/WorkImage';
 import { motion } from 'framer-motion';
 
 // images
-import ewidImage from './assets/ewid.webp';
+import weatherImage from './assets/weather.webp';
 import rpsImage from './assets/rps.webp';
 import passwordImage from './assets/password.webp';
 import taskImage from './assets/task.webp';
@@ -36,11 +36,11 @@ const Work = () => {
       />
 
       <WorkImage
-        bgImage={ewidImage}
-        link={'https://huanamigo.github.io/kalkulator-ewidencji-godzin/'}
-        linkTitle={'Work Time Calculator'}
+        bgImage={weatherImage}
+        link={'https://huanamigo.github.io/weather-app/'}
+        linkTitle={'TypeScript Weather App'}
         secondLinkTitle={
-          'Made for the needs of quick filling in the form for a large workplace'
+          'Weather App made with Weather API, React and TypeScript'
         }
       />
 
