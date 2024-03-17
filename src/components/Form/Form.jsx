@@ -40,7 +40,7 @@ const Form = () => {
         <input
           type="hidden"
           name="_redirect"
-          value="https://arturfurtak.online/#/thanks"
+          value="https://huanamigo.github.io/portfolio/#/thanks"
         />
       </div>
 

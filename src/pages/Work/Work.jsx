@@ -9,6 +9,7 @@ import rpsImage from './assets/rps.webp';
 import passwordImage from './assets/password.webp';
 import taskImage from './assets/task.webp';
 import pizzaImage from './assets/pizza-bg.webp';
+import pomodoroImage from './assets/pomodoro.webp';
 
 const Work = () => {
   return (
@@ -56,6 +57,13 @@ const Work = () => {
         link={'https://huanamigo.github.io/pizza-place/'}
         linkTitle={'Pizza Place'}
         secondLinkTitle={'Pizza ordering site using API and TypeScript'}
+      />
+
+      <WorkImage
+        bgImage={pomodoroImage}
+        link={'https://huanamigo.github.io/pomodoro-web-app/'}
+        linkTitle={'Pomodoro App'}
+        secondLinkTitle={'Most accurate pomodoro app made with TypeScript'}
       />
     </motion.div>
   );

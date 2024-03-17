@@ -7,25 +7,14 @@
   justify-content: center;
   align-items: center;
   transition: all 100ms ease;
+  &:hover {
+    .background {
+      filter: blur(5px);
+    }
+  }
 
   .secondary {
     font-size: 12px;
-  }
-
-  &:nth-child(1) {
-    grid-area: jeden;
-  }
-  &:nth-child(2) {
-    grid-area: dwa;
-  }
-  &:nth-child(3) {
-    grid-area: trzy;
-  }
-  &:nth-child(4) {
-    grid-area: cztery;
-  }
-  &:nth-child(5) {
-    grid-area: piec;
   }
 
   .background {
@@ -38,13 +27,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(5px);
     height: 100%;
     width: 100%;
     z-index: 1;
-    &:hover {
-      filter: blur(0);
-    }
+    transition: all 100ms ease;
   }
 
   &:hover {
@@ -88,26 +74,12 @@
 
 @media (max-width: $md-screen) {
   .wrapper {
-    width: 50vw;
-    a {
-      text-align: center;
-      width: 100%;
-      filter: blur(0);
-    }
-
     .linksWrapper {
-      opacity: 1 !important;
+      opacity: 1;
     }
 
-    &:nth-child(5) {
-      width: 100vw;
-    }
-
-    &:hover,
-    &:active {
-      .background {
-        filter: blur(0);
-      }
+    .background {
+      filter: blur(5px);
     }
   }
 }
