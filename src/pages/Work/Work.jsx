@@ -5,10 +5,8 @@ import { motion } from 'framer-motion';
 
 // images
 import weatherImage from './assets/weather.webp';
-import rpsImage from './assets/rps.webp';
 import passwordImage from './assets/password.webp';
 import taskImage from './assets/task.webp';
-import pizzaImage from './assets/pizza-bg.webp';
 import pomodoroImage from './assets/pomodoro.webp';
 
 const Work = () => {
@@ -20,13 +18,6 @@ const Work = () => {
       transition={{ ease: 'easeInOut', duration: 1.5 }}
       exit={{ x: window.innerWidth, transition: { duration: 0.5 } }}
     >
-      <WorkImage
-        bgImage={rpsImage}
-        link={'https://huanamigo.github.io/rock-paper-scissors-game/'}
-        linkTitle={'Rock Paper Scissors Game'}
-        secondLinkTitle={'RPS game made with React and SCSS'}
-      />
-
       <WorkImage
         bgImage={passwordImage}
         link={'https://huanamigo.github.io/password-generator/'}
@@ -50,13 +41,6 @@ const Work = () => {
         link={'https://huanamigo.github.io/react-todo-app/'}
         linkTitle={'TODO App'}
         secondLinkTitle={'Simple app with local-storage based memory'}
-      />
-
-      <WorkImage
-        bgImage={pizzaImage}
-        link={'https://huanamigo.github.io/pizza-place/'}
-        linkTitle={'Pizza Place'}
-        secondLinkTitle={'Pizza ordering site using API and TypeScript'}
       />
 
       <WorkImage
