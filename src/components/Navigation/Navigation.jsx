@@ -49,7 +49,7 @@ const Navigation = ({ handleCursor }) => {
           />
           <NavigationBtn
             label="Mail"
-            link={'mailto:arturfurtak5@gmail.com'}
+            link={'mailto:artur.furtak@proton.me'}
             styleName={'fa-solid fa-envelope'}
           />
         </div>

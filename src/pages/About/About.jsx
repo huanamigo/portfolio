@@ -15,17 +15,19 @@ const Skills = () => {
     >
       <div>
         <h1 className={styles.header}>About me</h1>
-        <em>where should I start...</em>
+        <em>Hi!</em>
         <p className={styles.desc}>
-          I’m a frontend developer with an interest for UX/UI and graphic
-          design. I’m passionate about gaming, cars and new technologies, and
-          I’m always curious to learn more!
+          I'm Artur, a passionate Frontend Developer with a strong focus on
+          React and TypeScript. Over the years, I've honed my skills in modern
+          web technologies such as Next.js, Node.js, and Firebase. I thrive in
+          creating dynamic and user-friendly applications, always aiming for
+          optimal performance and intuitive design.
         </p>
         <p className={styles.desc}>
-          I create effective and responsive websites that are fast, easy to use
-          and built with best practices. The main area of my specialization is
-          frontend development (HTML, CSS, JS, React), creating small and medium
-          websites, applications, animations and coding interactive layouts.
+          I am committed to continuous learning, I've dedicated countless hours
+          to mastering new technologies and improving my craft. My ability to
+          work collaboratively in team environments, combined with my technical
+          expertise, allows me to contribute effectively to innovative projects.
         </p>
         <p className={styles.desc}>
           Check my{' '}

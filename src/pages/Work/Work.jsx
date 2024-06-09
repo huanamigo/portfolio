@@ -8,6 +8,8 @@ import weatherImage from './assets/weather.webp';
 import passwordImage from './assets/password.webp';
 import taskImage from './assets/task.webp';
 import pomodoroImage from './assets/pomodoro.webp';
+import chatImage from './assets/chat.webp';
+import plateImage from './assets/blach.webp';
 
 const Work = () => {
   return (
@@ -26,7 +28,6 @@ const Work = () => {
           'Customizable password generator made with React and SCSS'
         }
       />
-
       <WorkImage
         bgImage={weatherImage}
         link={'https://huanamigo.github.io/weather-app/'}
@@ -35,19 +36,31 @@ const Work = () => {
           'Weather App made with Weather API, React and TypeScript'
         }
       />
-
       <WorkImage
         bgImage={taskImage}
         link={'https://huanamigo.github.io/react-todo-app/'}
         linkTitle={'TODO App'}
         secondLinkTitle={'Simple app with local-storage based memory'}
       />
-
       <WorkImage
         bgImage={pomodoroImage}
         link={'https://huanamigo.github.io/pomodoro-web-app/'}
         linkTitle={'Pomodoro App'}
         secondLinkTitle={'Most accurate pomodoro app made with TypeScript'}
+      />
+      <WorkImage
+        bgImage={plateImage}
+        link={'https://huanamigo.github.io/Blach-Meister-Plates-DB/'}
+        linkTitle={'Plategram'}
+        secondLinkTitle={
+          'Co-op project Instagram clone to appreciate cool car plates'
+        }
+      />
+      <WorkImage
+        bgImage={chatImage}
+        link={'https://huanamigo.github.io/react-chat-app/'}
+        linkTitle={'Telegram clone'}
+        secondLinkTitle={'Telegram-like chat app made with TS and Firebase'}
       />
     </motion.div>
   );

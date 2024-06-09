@@ -34,7 +34,7 @@ const Home = () => {
           </p>
           <p>
             <i className="fa-solid fa-envelope"></i>{' '}
-            <a href="mailto:arturfurtak5@gmail.com">arturfurtak5@gmail.com</a>
+            <a href="mailto:artur.furtak@proton.me">artur.furtak@proton.me</a>
           </p>
         </div>
       </div>
