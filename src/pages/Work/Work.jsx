@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 // images
 import weatherImage from './assets/weather.webp';
 import passwordImage from './assets/password.webp';
-import taskImage from './assets/task.webp';
+import redditImage from './assets/reddit.webp';
 import pomodoroImage from './assets/pomodoro.webp';
 import chatImage from './assets/chat.webp';
 import plateImage from './assets/blach.webp';
@@ -37,10 +37,12 @@ const Work = () => {
         }
       />
       <WorkImage
-        bgImage={taskImage}
-        link={'https://huanamigo.github.io/react-todo-app/'}
-        linkTitle={'TODO App'}
-        secondLinkTitle={'Simple app with local-storage based memory'}
+        bgImage={redditImage}
+        link={'https://next-reddit-clone-xi.vercel.app/'}
+        linkTitle={'Reddit clone'}
+        secondLinkTitle={
+          'Next.js based reddit clone app with PostgreSQL database'
+        }
       />
       <WorkImage
         bgImage={pomodoroImage}
