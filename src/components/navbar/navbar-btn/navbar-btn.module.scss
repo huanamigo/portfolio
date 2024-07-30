@@ -1,0 +1,24 @@
+@import '/src/variables.scss';
+
+.link {
+  i {
+    &:hover {
+      color: $main;
+    }
+  }
+
+  svg {
+    width: 2rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+    path {
+      fill: $gray;
+    }
+
+    &:hover {
+      path {
+        fill: $main;
+      }
+    }
+  }
+}

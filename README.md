@@ -1,98 +1,36 @@
-# Portfolio Website
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Description
+## Getting Started
 
-Just a show off
+First, run the development server:
 
-## Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- **Interactive UI**: Utilizes Framer Motion to animate page transitions and elements, enhancing the user experience with smooth animations.
-- **Single Page Application (SPA)**: Built with React and React Router for efficient, seamless navigation without page reloads.
-- **Responsive Design**: Fully responsive layout that adapts to various screen sizes and devices.
-- **SCSS Styling**: Uses SCSS for advanced styling features and organized stylesheets.
-- **GitHub Pages Hosting**: Hosted on GitHub Pages for easy updates and maintenance.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Technologies
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **React**: A JavaScript library for building user interfaces.
-- **React Router**: Library to handle routing in React applications.
-- **JavaScript (ES6+)**: For dynamic content and interactive elements.
-- **Framer Motion**: A powerful animation library for React.
-- **SCSS**: Advanced CSS with features like variables, nested rules, and mixins.
-- **GitHub Pages**: Free hosting directly from your GitHub repository.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Project Setup
+## Learn More
 
-### Prerequisites
+To learn more about Next.js, take a look at the following resources:
 
-If you really have to clone it make sure you have Node.js installed on your machine. This project was developed using Node.js v20.10.0
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Installation
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-1. Clone the repository:
+## Deploy on Vercel
 
-   ```bash
-   git clone https://github.com/huanamigo/portfolio.git
-   cd portfolio
-   ```
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Start the development server:
-   ```bash
-   npm start
-   ```
-
-The application will be available at `http://localhost:5173`.
-
-### Deployment to GitHub Pages
-
-1. Install the `gh-pages` package:
-
-   ```bash
-   npm install gh-pages --save-dev
-   ```
-
-2. Add the following scripts to your `package.json`:
-
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
-   }
-   ```
-
-3. Add a `homepage` field to your `package.json`:
-
-   ```json
-   "homepage": "https://your-username.github.io/portfolio-website"
-   ```
-
-4. Deploy the application:
-   ```bash
-   npm run deploy
-   ```
-
-After running this command, your application will be available at the specified `homepage` URL.
-
-## Usage
-
-Navigate through the website using the navigation links. Each page is loaded dynamically via React Router, ensuring a smooth and fast experience without traditional page reloads.
-
-## Contributing
-
-Again, if you really want to contribute, here’s how:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/AmazingFeature`).
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4. Push to the branch (`git push origin feature/AmazingFeature`).
-5. Open a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -1,0 +1,36 @@
+@import '/src/variables.scss';
+
+.container {
+  position: absolute;
+  height: 100vh;
+  width: 10rem;
+  background-color: black;
+
+  display: grid;
+
+  .logo {
+    //temp
+    * {
+      outline: none !important;
+    }
+    //temp
+    display: flex;
+    justify-content: center;
+
+    padding-top: 2rem;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    outline: 1px solid red;
+  }
+}

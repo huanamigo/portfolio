@@ -1,0 +1,78 @@
+@import '/src/variables.scss';
+
+.brackets {
+  color: $main;
+  display: block;
+  font-size: 2rem;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  text-align: center;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  * {
+    cursor: pointer;
+  }
+
+  span {
+    text-decoration: none;
+  }
+
+  .secondary {
+    color: $gray;
+    display: inline-block;
+    font-size: 0rem;
+    opacity: 0;
+    transition: all 1s ease;
+  }
+
+  .main {
+    color: #a0a0a0;
+    font-size: 1rem;
+    transition: all 1s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .secondary {
+      opacity: 1;
+      font-size: 1rem;
+    }
+
+    .main {
+      color: $main;
+    }
+  }
+}
+
+.lineWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: $md-screen) {
+  .brackets {
+    font-size: 10vw;
+  }
+
+  .main {
+    font-size: 5vw !important;
+  }
+
+  .wrapper {
+    &:hover {
+      .secondary {
+        font-size: 0vw !important;
+      }
+    }
+  }
+}
