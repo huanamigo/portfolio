@@ -10,8 +10,8 @@
   svg {
     width: 2rem;
     cursor: pointer;
-    transition: all 200ms ease;
     path {
+      transition: fill ease-in 100ms;
       fill: $gray;
     }
 

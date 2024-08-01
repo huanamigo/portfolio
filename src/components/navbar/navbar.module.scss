@@ -30,7 +30,16 @@
     align-items: center;
   }
 
-  div {
-    outline: 1px solid red;
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      margin: 5px;
+    }
   }
+
+  // div {
+  //   outline: 1px solid red;
+  // }
 }

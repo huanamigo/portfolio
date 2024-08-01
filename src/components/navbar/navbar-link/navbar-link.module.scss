@@ -5,6 +5,7 @@
   display: block;
   text-decoration: none;
   color: $gray;
+  transition: color ease-in 100ms;
 
   &:hover {
     color: white;

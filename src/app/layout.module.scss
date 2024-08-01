@@ -1,8 +1,14 @@
 @import '/src/variables.scss';
 
 .body {
-  background-color: rgb(59, 59, 59);
+  background-color: $background;
 
+  * {
+    font-family: 'Quicksand', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
   .container {
     margin-left: 10rem;
   }

@@ -10,7 +10,7 @@ export default function NavigationLogo() {
       <div className={styles.textWrapper}>
         <div className={styles.lineWrapper}>
           <span className={styles.main}>A</span>
-          <div className={styles.secondary}>RTUR</div>
+          <span className={styles.secondary}>RTUR</span>
         </div>
 
         <div className={styles.lineWrapper}>
