@@ -30,13 +30,13 @@
     display: inline-block;
     font-size: 0rem;
     opacity: 0;
-    transition: all 1s ease;
+    transition: all 400ms ease;
   }
 
   .main {
     color: #a0a0a0;
     font-size: 1rem;
-    transition: all 1s ease;
+    transition: all 400ms ease;
   }
 
   &:hover {

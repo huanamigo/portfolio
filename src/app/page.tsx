@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './page.module.scss';
 
 export default function Home() {
@@ -10,6 +11,9 @@ export default function Home() {
           <span className={styles.secondary}>a Frontend Developer</span>
         </h1>
       </div>
+      <Link className={styles.contactBtn} href={'/contact'}>
+        CONTACT
+      </Link>
     </main>
   );
 }

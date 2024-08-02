@@ -2,10 +2,32 @@
 
 .main {
   color: white;
+  position: relative;
 
   display: flex;
   align-items: center;
   height: 100vh;
+
+  .contactBtn {
+    transform: rotate(270deg);
+
+    position: absolute;
+    right: 0;
+
+    padding: 1rem;
+
+    background-color: $main;
+    transition: all 400ms ease;
+    font-weight: 600;
+
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      background-color: black;
+      color: $main;
+    }
+  }
 
   .logoContainer {
     position: relative;
@@ -28,12 +50,14 @@
       animation: clip-path-reveal-1 3s ease;
       padding-left: 2rem;
       font-size: 92px;
+
       .secondary {
         font-size: 32px;
       }
 
       span {
         display: block;
+        font-weight: 500;
       }
     }
 
