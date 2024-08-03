@@ -1,0 +1,58 @@
+@import '/src/variables.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  padding: 2rem;
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      color: $main;
+      font-size: 56px;
+      font-weight: 600;
+    }
+
+    p {
+      color: white;
+      font-size: 20px;
+    }
+  }
+
+  .formContainer {
+    input {
+      background-color: black;
+      border: none;
+      color: white;
+
+      margin-top: 1rem;
+      padding: 0.3rem;
+
+      &:focus {
+        color: $main;
+      }
+    }
+
+    .sendBtn {
+      padding: 0.5rem 1rem;
+      border: none;
+      cursor: pointer;
+
+      background-color: $main;
+      transition: all 400ms ease;
+      font-weight: 600;
+
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        background-color: $background;
+        color: $main;
+      }
+    }
+  }
+}

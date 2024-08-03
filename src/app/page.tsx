@@ -7,12 +7,18 @@ export default function Home() {
       <div className={styles.logoContainer}>
         <h1 className={styles.logo}>
           <span>Hi,</span>
-          <span>{`I'm Artur`}</span>
-          <span className={styles.secondary}>a Frontend Developer</span>
+          <span>
+            {`I'm `}
+            <em>A</em>
+            rtur
+          </span>
+          <span className={styles.secondary}>
+            a <em>F</em>rontend Developer
+          </span>
         </h1>
       </div>
       <Link className={styles.contactBtn} href={'/contact'}>
-        CONTACT
+        GET IN TOUCH
       </Link>
     </main>
   );
