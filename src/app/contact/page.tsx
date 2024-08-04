@@ -12,12 +12,33 @@ export default function ContactPage() {
         <p>artur.furtak@proton.me</p>
       </div>
       <div className={styles.formContainer}>
-        <form action="">
-          <input type="text" name="name" placeholder="name" />
-          <input type="email" name="email" placeholder="email" />
-          <input type="text" name="subject" placeholder="subject" />
-          <textarea name="message" placeholder="message" />
-          <button className={styles.sendBtn}>send</button>
+        <form className={styles.form} action="">
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            className={styles.name}
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            className={styles.email}
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="subject"
+            className={styles.subject}
+          />
+          <textarea
+            name="message"
+            placeholder="message"
+            className={styles.message}
+          />
+          <div className={styles.sendBtnWrapper}>
+            <button className={styles.sendBtn}>send</button>
+          </div>
         </form>
       </div>
     </main>

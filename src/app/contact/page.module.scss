@@ -24,16 +24,56 @@
   }
 
   .formContainer {
-    input {
-      background-color: black;
-      border: none;
-      color: white;
+    margin: auto 0;
+    .form {
+      display: grid;
 
-      margin-top: 1rem;
-      padding: 0.3rem;
+      .name {
+        grid-area: name;
+      }
 
-      &:focus {
-        color: $main;
+      .email {
+        grid-area: email;
+      }
+
+      .subject {
+        grid-area: subject;
+      }
+
+      .message {
+        grid-area: message;
+      }
+
+      .sendBtnWrapper {
+        grid-area: sendBtn;
+        display: flex;
+        justify-content: flex-end;
+
+        padding-right: 0.6rem;
+        margin-top: 0.6rem;
+      }
+
+      grid-template-areas:
+        'name email'
+        'subject subject'
+        'message message'
+        'message message'
+        'sendBtn sendBtn';
+
+      input,
+      textarea {
+        background-color: black;
+        border: none;
+        color: white;
+
+        margin: 0.6rem;
+        padding: 0.3rem;
+
+        width: calc(100% - 0.6rem - 0.6rem);
+
+        &:focus {
+          color: $main;
+        }
       }
     }
 
