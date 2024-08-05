@@ -1,7 +1,10 @@
+import ProjectTile from '@/components/work/project-overview';
+import styles from './page.module.scss';
+
 export default function WorkPage() {
   return (
-    <div>
-      <p>WORK</p>
-    </div>
+    <main className={styles.container}>
+      <ProjectTile />
+    </main>
   );
 }
