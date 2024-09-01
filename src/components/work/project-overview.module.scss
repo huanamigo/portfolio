@@ -1,3 +1,36 @@
+@import '/src/variables.scss';
+
 .container {
-  margin: 2rem;
+  // * {
+  //   outline: 1px solid red;
+  // }
+  display: flex;
+  width: 50%;
+  padding-top: 3rem;
+  margin: 0 auto;
+
+  .description {
+    margin-left: 1rem;
+
+    a {
+      color: $main;
+      font-size: xx-large;
+      text-decoration: none;
+    }
+
+    p {
+      color: white;
+    }
+
+    .tagWrapper {
+      margin-top: 10px;
+      bottom: 0;
+
+      .tag {
+        background-color: $main;
+        padding: 3px;
+        margin-right: 10px;
+      }
+    }
+  }
 }
