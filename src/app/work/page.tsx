@@ -8,6 +8,7 @@ export default function WorkPage() {
         header="Blach Meister"
         image="/blach.webp"
         tags={['React', 'JavaScript', 'React Router']}
+        desc="Simple co-op made JavaScript Instagram clone, currently only displays pages added into the folder"
         link="https://huanamigo.github.io/Blach-Meister-Plates-DB/"
       />
     </main>

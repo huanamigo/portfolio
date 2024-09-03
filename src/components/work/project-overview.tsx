@@ -7,6 +7,7 @@ interface ProjectTileProps {
   image: string;
   tags: string[];
   link: string;
+  desc: string;
 }
 
 export default function ProjectTile({
@@ -14,6 +15,7 @@ export default function ProjectTile({
   image,
   tags,
   link,
+  desc,
 }: ProjectTileProps) {
   return (
     <div className={styles.container}>
@@ -29,12 +31,7 @@ export default function ProjectTile({
         <a target="_blank" rel="noreferrer" href={link}>
           {header}
         </a>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-          sed ducimus necessitatibus inventore reiciendis doloribus praesentium
-          delectus minus, omnis veritatis. Tempore, non architecto? Assumenda
-          numquam, aut harum excepturi totam quia?
-        </p>
+        <p>{desc}</p>
         <div className={styles.tagWrapper}>
           {tags.map((tag) => (
             <span className={styles.tag} key={tag}>
