@@ -15,9 +15,9 @@ export default function Navbar() {
   return (
     <div className={styles.container}>
       <div className={styles.logo}>
-        <Link href={'/'}>
+        <div>
           <NavigationLogo />
-        </Link>
+        </div>
       </div>
 
       <div className={styles.links}>
