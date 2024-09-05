@@ -11,6 +11,10 @@
     flex-direction: column;
     justify-content: center;
 
+    .bold {
+      font-weight: 600;
+    }
+
     h1 {
       color: $main;
       font-size: 56px;

@@ -5,11 +5,21 @@ export default function ContactPage() {
     <main className={styles.container}>
       <div className={styles.textContainer}>
         <h1>Contact me!</h1>
-        <p>{`Have a question? A job offer? Want to create something together? Contact me and let's talk!`}</p>
-        <p>Artur Furtak</p>
-        <p>Poland, 40-833 Katowice</p>
-        <p>+48 883 655 934</p>
-        <p>artur.furtak@proton.me</p>
+        <p>
+          {`Have a question? A job offer? Want to create something together? Contact me and let's talk!`}
+          <br />
+          <br />
+          <br />
+        </p>
+        <p>
+          <span className={styles.bold}>Poland, 40-833 Katowice</span>
+        </p>
+        <p>
+          <span className={styles.bold}>+48 883 655 934</span>
+        </p>
+        <p>
+          <span className={styles.bold}>artur.furtak@proton.me</span>
+        </p>
       </div>
       <div className={styles.formContainer}>
         <form className={styles.form} action="">
