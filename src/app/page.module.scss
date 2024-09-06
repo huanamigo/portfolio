@@ -102,4 +102,12 @@
       }
     }
   }
+
+  .linesWrapper {
+    width: 100vh;
+    height: 100%;
+    transform: rotate(90deg) translate(0%, 0);
+    right: 10%;
+    position: fixed;
+  }
 }

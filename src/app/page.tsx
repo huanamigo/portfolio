@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.scss';
+import Lines from '@/components/lines/lines';
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
             a <em>F</em>rontend Developer
           </span>
         </h1>
+      </div>
+      <div className={styles.linesWrapper}>
+        <Lines />
       </div>
       <Link className={styles.contactBtn} href={'/contact'}>
         GET IN TOUCH
