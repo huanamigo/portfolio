@@ -1,0 +1,45 @@
+@import '/src/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 80%;
+
+  color: white;
+  padding: 2rem;
+
+  i {
+    color: rgb(201, 201, 201);
+  }
+
+  a {
+    text-decoration: none;
+    color: $main;
+    position: relative;
+
+    &::after {
+      content: ' ';
+      width: 0;
+      height: 1px;
+      background-color: $main;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 200ms ease;
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  h1 {
+    color: $main;
+    font-size: 56px;
+    font-weight: 600;
+  }
+}
