@@ -28,10 +28,12 @@ export default function ProjectTile({
         quality={80}
       />
       <div className={styles.description}>
-        <a target="_blank" rel="noreferrer" href={link}>
-          {header}
-        </a>
-        <p>{desc}</p>
+        <div className={styles.textWrapper}>
+          <a target="_blank" rel="noreferrer" href={link}>
+            {header}
+          </a>
+          <p>{desc}</p>
+        </div>
         <div className={styles.tagWrapper}>
           {tags.map((tag) => (
             <span className={styles.tag} key={tag}>

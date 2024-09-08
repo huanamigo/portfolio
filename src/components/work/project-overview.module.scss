@@ -11,6 +11,9 @@
 
   .description {
     margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     a {
       color: $main;
@@ -27,9 +30,11 @@
       bottom: 0;
 
       .tag {
+        display: inline-block;
         background-color: $main;
         padding: 3px;
         margin-right: 10px;
+        margin-top: 10px;
       }
     }
   }
