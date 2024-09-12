@@ -23,7 +23,7 @@ export default function WorkPage() {
       <ProjectTile
         header="Reddit clone"
         image="/reddit.webp"
-        tags={['Next.js', 'TypeScript', 'Postres']}
+        tags={['Next.js', 'TypeScript', 'Postgres']}
         desc="Next.js based Reddit clone app made with PostgreSQL database on Vercel"
         link="https://next-reddit-clone-xi.vercel.app/"
       />
