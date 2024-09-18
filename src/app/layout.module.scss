@@ -14,3 +14,12 @@
     margin-left: 10rem;
   }
 }
+
+@media (max-width: 768px) {
+  .body {
+    .container {
+      margin-left: 0;
+      overflow-x: hidden;
+    }
+  }
+}

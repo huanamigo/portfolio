@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from './page.module.scss';
-import Lines from '@/components/lines/lines';
+import Lines from '@/components/home/lines/lines';
 
 export default function Home() {
   return (

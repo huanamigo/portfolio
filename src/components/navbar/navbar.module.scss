@@ -10,9 +10,6 @@
 
   .logo {
     //temp
-    * {
-      outline: none !important;
-    }
     //temp
     display: flex;
     justify-content: center;
@@ -38,8 +35,21 @@
       margin: 5px;
     }
   }
+}
 
-  // div {
-  //   outline: 1px solid red;
-  // }
+@media (max-width: 768px) {
+  .container {
+    width: 100vw;
+    left: calc(0px + 100vw);
+    z-index: 1;
+    transition: all 200ms ease;
+  }
+
+  .hamButton {
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
 }
