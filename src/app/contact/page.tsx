@@ -45,6 +45,7 @@ export default function ContactPage() {
             name="message"
             placeholder="message"
             className={styles.message}
+            rows={4}
           />
           <div className={styles.sendBtnWrapper}>
             <button className={styles.sendBtn}>send</button>

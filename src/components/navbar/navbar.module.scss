@@ -9,8 +9,6 @@
   display: grid;
 
   .logo {
-    //temp
-    //temp
     display: flex;
     justify-content: center;
 
@@ -37,7 +35,11 @@
   }
 }
 
-@media (max-width: 768px) {
+.hamButton {
+  display: none;
+}
+
+@media (max-width: $md-screen) {
   .container {
     width: 100vw;
     left: calc(0px + 100vw);
@@ -46,6 +48,7 @@
   }
 
   .hamButton {
+    display: block;
     color: white;
     position: absolute;
     top: 0;

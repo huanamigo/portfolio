@@ -15,7 +15,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md-screen) {
   .body {
     .container {
       margin-left: 0;
