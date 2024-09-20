@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.scss';
 
-// import HamburgerBtn from './hamburger/hamburger';
+import HamburgerBtn from './hamburger/hamburger';
 import NavigationLogo from './logo/logo';
 import NavbarLink from './navbar-link/navbar-link';
 import NavbarBtn from './navbar-btn/navbar-btn';
@@ -20,7 +20,7 @@ export default function Navbar() {
         onClick={() => hide(!isHidden)}
         className={styles.hamButton}
       >
-        {/* <HamburgerBtn active={isHidden} /> */}X
+        <HamburgerBtn active={isHidden} />
       </button>
 
       <div className={styles.container} style={isHidden ? {} : { left: '0' }}>
