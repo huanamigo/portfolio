@@ -4,6 +4,7 @@
   height: 80px;
   position: absolute;
   width: 80px;
+  cursor: pointer;
 }
 
 @media (max-width: 700px) {
@@ -14,6 +15,7 @@
 .plate {
   height: 80px;
   width: 80px;
+  cursor: pointer;
 }
 .burger {
   filter: url(#gooeyness);

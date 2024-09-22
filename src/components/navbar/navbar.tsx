@@ -31,9 +31,9 @@ export default function Navbar() {
         </div>
 
         <div className={styles.links}>
-          <NavbarLink name="about" />
-          <NavbarLink name="work" />
-          <NavbarLink name="contact" />
+          <NavbarLink name="about" hide={hide} />
+          <NavbarLink name="work" hide={hide} />
+          <NavbarLink name="contact" hide={hide} />
         </div>
 
         <div className={styles.social}>
