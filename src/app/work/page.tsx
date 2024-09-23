@@ -41,7 +41,7 @@ export default function WorkPage() {
         image="/pomodoro.webp"
         tags={['React', 'TypeScript']}
         desc="Unnecessarily accurate pomodoro timer. Starting/stopping only has 0.001s of resetting error"
-        link="https://huanamigo.github.io/Blach-Meister-Plates-DB/"
+        link="https://huanamigo.github.io/pomodoro-web-app/"
       />
 
       <ProjectTile

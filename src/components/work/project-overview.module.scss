@@ -1,11 +1,7 @@
 @import '/src/variables.scss';
 
 .container {
-  // * {
-  //   outline: 1px solid red;
-  // }
   display: flex;
-  // width: 50%;
   max-width: 700px;
   padding-top: 3rem;
   margin: 0 auto;
@@ -20,6 +16,7 @@
       color: $main;
       font-size: xx-large;
       text-decoration: none;
+      line-height: 0.8;
     }
 
     p {
@@ -37,6 +34,15 @@
         margin-right: 10px;
         margin-top: 10px;
       }
+    }
+  }
+}
+
+@media (max-width: $md-screen) {
+  .container {
+    img {
+      width: 200px;
+      height: 200px;
     }
   }
 }
